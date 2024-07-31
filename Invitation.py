@@ -158,5 +158,5 @@ if st.session_state.step == 2 and st.session_state.confirmar_seleccion and st.se
     if st.session_state.opcion_seleccionada == "Ya no te amo":
         st.markdown("Amorcito yo te amo con mi vida, ¿Cómo crees que esta es la opción?😔")
     elif st.session_state.opcion_seleccionada == "Estoy embarazado":
-        st.write("Creo que los hombres aun no nos podemos embarazar o whisky ya tendría 2")
+        st.markdown("Creo que los hombres aun no nos podemos embarazar o whisky ya tendría 2")
 
