@@ -156,7 +156,7 @@ elif st.session_state.step == 3:
 # Mostrar la selección si se confirmó, independientemente del paso
 if st.session_state.step == 2 and st.session_state.confirmar_seleccion and st.session_state.opcion_seleccionada != "Vamos a ver a la MC":
     if st.session_state.opcion_seleccionada == "Ya no te amo":
-        st.write("Amorcito yo te amo con mi vida, ¿Cómo crees que esta es la opción?😔")
+        st.markdown("Amorcito yo te amo con mi vida, ¿Cómo crees que esta es la opción?😔")
     elif st.session_state.opcion_seleccionada == "Estoy embarazado":
         st.write("Creo que los hombres aun no nos podemos embarazar o whisky ya tendría 2")
 
