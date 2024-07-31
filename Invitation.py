@@ -141,22 +141,7 @@ elif st.session_state.step == 3:
             st.markdown(f"<div style='text-align: center;'><img src='data:image/png;base64,{img_base64_2}' width='300'/></div>", unsafe_allow_html=True)
             
             gif_base64 = gif_to_base64("gi.gif")
-            # Definir el arte ASCII del corazón lleno
-            st.write = (
-            "  ******     ******  ",
-            "**    **   **    ** ",
-            "**      ** **      **",
-            "**       **       **",
-            "**                **",
-            " **             ** ",
-            "   **         **   ",
-            "     **     **     ",
-            "       ** **       ",
-            "         **         "
-            )
-
         
-            
             st.stop()  # Detiene la ejecución de la aplicación
             
 # Mostrar la selección si se confirmó, independientemente del paso
