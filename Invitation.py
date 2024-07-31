@@ -43,7 +43,7 @@ elif st.session_state.step == 1:
     st.write("¿Cuál sorpresa?")
     
     # Cargar y reproducir segundo archivo de audio
-    audio_file_2 = "/Users/cristianusca/Downloads/Opción.m4a"
+    audio_file_2 = "Opción.m4a"
     audio_bytes2 = open(audio_file_2, "rb").read()
     st.audio(audio_bytes2, format="audio/m4a")
     
@@ -114,11 +114,11 @@ elif st.session_state.step == 3:
                 </div>
                 """, unsafe_allow_html=True)
             st.write("Correcto, así que ¿aceptas?")
-            songs = "/Users/cristianusca/Downloads/song.mp3"
+            songs = "song.mp3"
             audio_bytes_3 = open(songs, "rb").read()
             st.audio(audio_bytes_3, format="audio/m4a")
             
-            reb = "/Users/cristianusca/Downloads/Reb.PNG"
+            reb = "Reb.PNG"
             image = Image.open(reb)
             
             # Convertir imagen a base64
@@ -129,7 +129,7 @@ elif st.session_state.step == 3:
             # Mostrar imagen centrada
             st.markdown(f"<div style='text-align: center;'><img src='data:image/png;base64,{img_base64}' width='300'/></div>", unsafe_allow_html=True)
             
-            che = "/Users/cristianusca/Downloads/Che.JPG"
+            che = "Che.JPG"
             image_2 = Image.open(che)
             
             # Convertir imagen a base64
@@ -140,7 +140,7 @@ elif st.session_state.step == 3:
             # Mostrar imagen centrada
             st.markdown(f"<div style='text-align: center;'><img src='data:image/png;base64,{img_base64_2}' width='300'/></div>", unsafe_allow_html=True)
             
-            gif_base64 = gif_to_base64("/Users/cristianusca/Downloads/gi.gif")
+            gif_base64 = gif_to_base64("gi.gif")
             # Definir el arte ASCII del corazón lleno
             st.write = (
             "  ******     ******  ",
