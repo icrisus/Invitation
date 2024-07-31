@@ -10,7 +10,7 @@ def gif_to_base64(gif_path):
         return base64.b64encode(gif_file.read()).decode("utf-8")
 
 # Reemplaza con la ruta de tu GIF
-gif_base64 = gif_to_base64("/Users/cristianusca/Downloads/gi.gif")
+gif_base64 = gif_to_base64("gi.gif")
 # Título de la aplicación
 st.markdown("<h1 style='text-align: center;'>Bienvenida Lov <3</h1>", unsafe_allow_html=True)
 
