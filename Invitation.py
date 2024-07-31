@@ -30,7 +30,7 @@ def next_step():
 # Mostrar contenido dependiendo del paso actual
 if st.session_state.step == 0:
     # Cargar y reproducir primer archivo de audio
-    audio_file = "/Users/cristianusca/Downloads/Intro.m4a"
+    audio_file = "Intro.m4a"
     audio_bytes = open(audio_file, "rb").read()
     st.audio(audio_bytes, format="audio/m4a")
     
