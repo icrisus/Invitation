@@ -61,7 +61,7 @@ elif st.session_state.step == 1:
 
 elif st.session_state.step == 2:
     # Mostrar segundo texto
-    st.write("Por favor, selecciona una opción.")
+    st.markdown("Por favor, selecciona una opción.")
     
     # Mostrar opciones y botón de confirmación
     opciones = ["Ya no te amo", "Estoy embarazado", "Vamos a ver a la MC"]
@@ -75,10 +75,10 @@ elif st.session_state.step == 2:
 elif st.session_state.step == 3:
     if st.session_state.confirmar_seleccion:
         if st.session_state.opcion_seleccionada == "Ya no te amo":
-            st.write("Amorcito yo te amo con mi vida, ¿Cómo crees que esta es la opción?😔")
+            st.markdown("Amorcito yo te amo con mi vida, ¿Cómo crees que esta es la opción?😔")
         
         elif st.session_state.opcion_seleccionada == "Estoy embarazado":
-            st.write("Creo que los hombres aun no nos podemos embarazar o whisky ya tendría 2")
+            st.markdown("Creo que los hombres aun no nos podemos embarazar o whisky ya tendría 2")
         
         elif st.session_state.opcion_seleccionada == "Vamos a ver a la MC":
             if gif_base64:
@@ -122,7 +122,7 @@ elif st.session_state.step == 3:
                     </div>
                     """, unsafe_allow_html=True)
             
-            st.write("Correcto, así que ¿aceptas?")
+            st.markdown("Correcto, así que ¿aceptas?")
             
             try:
                 songs = "song.mp3"
