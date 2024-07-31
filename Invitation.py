@@ -45,7 +45,7 @@ if st.session_state.step == 0:
 
 elif st.session_state.step == 1:
     # Mostrar primer texto
-    st.write("¿Cuál sorpresa?")
+    
     
     # Cargar y reproducir segundo archivo de audio
     try:
